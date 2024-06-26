@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Forms</title>
+</head>
+<body>
+    <form action="" method="post">
+        <input type="text" />
+        <input type="password" required />
+        <input type="checkbox" />
+        <input type="radio" />
+        <input type="number" min="0" max="10" />
+        <input type="submit" value="ok"/>
+        <textarea rows="4" cols="4"></textarea>
+    </form>
+    <hr/>
+    <button type="button">Ok</button>
+    <button type="button" onclick="doSomething()">Apply</button>
+
+    <p>Apa warna favoritmu :</p>
+    <select>
+        <option>Merah</option>
+        <option>Biru</option>
+        <option>Kuning</option>
+    </select>
+
+    <fieldset>
+        <legend>Data Diri</legend>
+        <p>
+            <label for="nama">Nama :</label>
+            <input type="text" name="nama">
+        </p>
+        <p>
+            <label for="usia">Usia :</label>
+            <input type="number" name="usia">
+        </p>
+    </fieldset>
+    <div>division 1</div>
+    <div>division 2</div>
+    <div>division 3</div>
+</body>
+<script>
+    function doSomething() {
+        console.log("Hello World")
+    }
+</script>
+</html>
