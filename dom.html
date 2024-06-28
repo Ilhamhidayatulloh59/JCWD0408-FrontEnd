@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <script>
+        function onUpdate() {
+            const element = document.getElementById("myElement")
+            element.innerHTML = "<p>Updated Text</p>"
+            element.style.color = "red"
+        }
+    </script>
+</head>
+<body>
+    <h1 id="myElement">Original Text</h1>
+    <button onclick="onUpdate()">update</button>
+</body>
+</html>
