@@ -1,8 +1,13 @@
-import { Box, Text } from "@chakra-ui/react";
+import { Box, Text, useColorMode } from "@chakra-ui/react";
 
 function MenuNav(props) {
+  const { colorMode } = useColorMode();
   return (
-    <Box color="white" _hover={{ color: "black", cursor: "pointer" }}>
+    <Box
+      color={colorMode == "light" ? "black" : "white"}
+      cursor="pointer"
+      _hover={{ color: "black" }}
+    >
       <Text>{props.children}</Text>
     </Box>
   );
