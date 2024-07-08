@@ -1,0 +1,40 @@
+{
+  "users": [
+    {
+      "id": "ec39",
+      "name": "Andi",
+      "email": "andi@gmail.com",
+      "password": "andi1234"
+    },
+    {
+      "id": "f34b",
+      "name": "Budi",
+      "email": "budi@gmail.com",
+      "password": "budi1234"
+    },
+    {
+      "id": "1ec4",
+      "name": "Cahyadi",
+      "email": "cahyadi@gmail.com",
+      "password": "Asd1234!"
+    },
+    {
+      "id": "08a4",
+      "name": "Darmaji",
+      "email": "darmaji@gmail.com",
+      "password": "Asd1234!"
+    },
+    {
+      "id": "50e3",
+      "name": "Endang",
+      "email": "endang@gmail.com",
+      "password": "Asd1234!"
+    },
+    {
+      "id": "709e",
+      "name": "Ronaldo",
+      "email": "ronaldo@gmail.com",
+      "password": "Asd1234!"
+    }
+  ]
+}
