@@ -1,4 +1,5 @@
 "use client"
+import { getTodo } from "@/app/action";
 import { ITodo } from "@/type";
 import axios from "axios";
 
@@ -11,6 +12,7 @@ export default function ItemTodo({ item, onReload }: IProps) {
     const handleDelete = async (id: string) => {
         try {
             await axios.delete(`http://localhost:2000/todo/${id}`)
+            getTodo()
             onReload()
         } catch (err) {
             console.log(err);
@@ -21,6 +23,7 @@ export default function ItemTodo({ item, onReload }: IProps) {
             await axios.patch(`http://localhost:2000/todo/${id}`, {
                 isCompleted: !isCompleted
             })
+            getTodo()
             onReload()
         } catch (err) {
             console.log(err);

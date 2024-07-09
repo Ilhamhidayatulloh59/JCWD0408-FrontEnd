@@ -1,3 +1,4 @@
+import Link from "next/link"
 import { IUser } from "./tableUser"
 
 export default async function TableUserServer() {
@@ -21,10 +22,14 @@ export default async function TableUserServer() {
                         user.map((item: IUser) => {
                             return (
                                 <tr key={item.id}>
-                                    <td className="min-w-[100px]">{item.name}</td>
-                                    <td className="min-w-[150px]">{item.email}</td>
-                                    <td className="min-w-[100px]">{item.password}</td>
-                                </tr>
+                                        <td className="min-w-[100px]">
+                                            <Link href={`/users/${item.id}`}>
+                                                {item.name}
+                                            </Link>
+                                        </td>
+                                        <td className="min-w-[150px]">{item.email}</td>
+                                        <td className="min-w-[100px]">{item.password}</td>
+                                    </tr>
                             )
                         })
                     }

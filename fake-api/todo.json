@@ -1,29 +1,19 @@
 {
   "todo": [
     {
-      "id": "1",
+      "id": "e874",
       "desc": "Coding",
-      "isCompleted": false
+      "isCompleted": true
     },
     {
-      "id": "7f14",
-      "desc": "Eat",
-      "isCompleted": false
-    },
-    {
-      "id": "a8b8",
+      "id": "73c1",
       "desc": "Sleep",
-      "isCompleted": false
+      "isCompleted": true
     },
     {
-      "id": "f93e",
-      "desc": "Repeat",
-      "isCompleted": false
-    },
-    {
-      "id": "9bf1",
-      "desc": "Reading",
-      "isCompleted": false
+      "id": "6d74",
+      "desc": "Add",
+      "isCompleted": true
     }
   ]
 }

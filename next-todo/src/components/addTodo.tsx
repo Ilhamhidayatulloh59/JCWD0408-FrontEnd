@@ -1,4 +1,5 @@
 "use client"
+import { addTodo } from '@/app/action'
 import axios from 'axios'
 import { ErrorMessage, Field, Form, Formik, FormikProps } from 'formik'
 import * as yup from 'yup'
@@ -7,7 +8,7 @@ const todoSchema = yup.object().shape({
     todo: yup.string().required("todo is required")
 })
 
-interface MyFormValue {
+export interface MyFormValue {
     todo: string
 }
 
@@ -20,10 +21,11 @@ export default function AddTodo({ onReload }: IProps) {
 
     const handleAdd = async (values: MyFormValue) => {
         try {
-            await axios.post("http://localhost:2000/todo", {
-                desc: values.todo,
-                isCompleted: false
-            })
+            // await axios.post("http://localhost:2000/todo", {
+            //     desc: values.todo,
+            //     isCompleted: false
+            // })
+            await addTodo(values)
             onReload()
         } catch (err) {
             console.log(err);

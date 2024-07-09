@@ -1,4 +1,10 @@
 import ListTodo from "@/components/listTodo";
+import ListTodoServer from "@/components/server/listTodo";
+
+export const metadata = {
+  title: "Todo App",
+  description: "Todo app web"
+}
 
 export default function Home() {
   return (
@@ -8,6 +14,7 @@ export default function Home() {
       </h1>
       <div className="flex gap-[100px]">
         <ListTodo />
+        <ListTodoServer />
       </div>
     </div>
   );
