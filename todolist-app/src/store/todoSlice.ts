@@ -13,6 +13,8 @@ const todoSlice = createSlice({
     initialState: todo,
     reducers: {
         onAdd: (state, action: PayloadAction<string>) => {
+            console.log("asd");
+            
             let newTodo = {
                 id: Math.max(...state.map((item) => item.id)) + 1,
                 desc: action.payload,

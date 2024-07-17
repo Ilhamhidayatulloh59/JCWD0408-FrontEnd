@@ -19,11 +19,11 @@ function App() {
         {/* <StateComp /> */}
         {/* <EffectComp /> */}
         {/* <RefComp /> */}
-        {/* <MemoComp /> */}
+        <MemoComp />
         {/* <ContextComp /> */}
         {/* <ReducerComp /> */}
         {/* <CallbackComp /> */}
-        <CustomComp />
+        {/* <CustomComp /> */}
       </UserContext.Provider>
     </div>
   )
